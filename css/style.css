@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PingFang SC", "Microsoft Yahei", sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'totoro' !important;
+}
+
+@font-face {
+  font-family: 'totoro';
+  src: url(../font/all.ttf);
+}
+
+@font-face {
+  font-family: 'footer';
+  src: url(../font/footer.ttf);
+}
+
+a:hover {
+  transform: scale(1.05);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+}
+
+a:active {
+  color: #b000ff;
+}
+
+a:visited {
+  color: rgb(255 0 0);
+}
+
+span:hover {
+  transform: scale(1.05);
+}
+
+html {
+	font-size: 16px;
+	
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 1.5625rem;
+  background-image: url(../img/bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgb(227 227 227 / 70%);
+  overflow-x: hidden;
+}
+
+
+tr {
+  font-size: 1.25rem;
+}
+
+#title {
+  
+  color: rgb(0, 0, 0) !important;
+  font-size: 2.75rem !important;
+  font-weight: 500 !important;
+  margin-bottom: 0.9375rem;
+}
+
+footer {
+  /* position: absolute; */
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  /* bottom: 0; */
+}
+
+.footer {
+  margin: auto;
+  width: fit-content;
+  /*实现div居中，宽度自适应 */
+  line-height: 5rem;
+  /* position: absolute;
+  top: 20px;
+  right: 31vw; */
+  color: rgb(12, 28, 25);
+  font-size: 1.25rem;
+  font-family: '楷体';
+}
+
+.head {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+}
+
+nav {
+  position: absolute;
+  position: sticky;
+  z-index: 100011111;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* 左右padding */
+  padding: 0 5vw;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.445);
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+}
+
+
+#first {
+  position: absolute;
+  left: 26px;
+  font-family: '华文行楷';
+  font-weight: 900;
+  font-size: 1.5625rem;
+}
+
+#jiaoshe {
+  margin-top: 6.25rem !important;
+}
+
+.nav-menu {
+  /* 占令一半宽度 */
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+
+  /* 最宽550px */
+  max-width: 37.5rem;
+}
+
+.nav-menu li {
+  width: 40%;
+  list-style: none;
+  color: #dadbdd;
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.nav-menu li a {
+  color: rgba(0, 0, 0, 0.716);
+}
+
+.burger div {
+  /* 设置汉堡按钮三层条 */
+  width: 1.5625rem;
+  height: 0.1875rem;
+  background-color: #dadbdd;
+  margin: 0.25rem;
+}
+
+.burger {
+  display: none;
+}
+
+
+
+.banner {
+	
+	margin: 1.25rem auto;
+}
+.banner img{
+	width: 85%;
+	height: 85%;
+	margin: 0 0.625rem 0.625rem 0.625rem;
+}
+
+.big_div_001 p {
+  font-size: 2.8125rem;
+  font-family:'totoro' !important;
+  src: url(../font/all.ttf);
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+}
+
+.big_div_002 {
+  display: block;
+  width: 100%;
+  margin-top: 6.25rem;
+}
+
+.guide  {
+	margin: 1.25rem auto;
+}
+
+.guide img{
+	width: 76%;
+	height: 64%;
+	margin: 1.875rem 0.625rem 0.625rem 0.625rem;
+	border: 0.5px solid rgb(218, 222, 218);
+}
+
+.big_div_002 .kong{
+  height: 3.125rem;
+}
+
+.big_div_002 .title {
+  position: relative;
+  top: 1.5625rem;
+  font-size: 2.1875rem;
+}
+
+.box-left {
+  position: absolute;
+  width: 15%;
+  left: 6.25rem;
+  top: -40px;
+  margin-top: 3.125rem !important;
+}
+
+.box-left img {
+  margin-top: 1.875rem;
+  margin-bottom: 0.625rem;
+  border: 0.125rem solid rgb(220, 156, 133);
+  width: 100%;
+  height: 100%;
+}
+
+.box-right span {
+  color: black;
+  margin-top: 0.625rem;
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+.box-right {
+  position: absolute;
+  right: 0.625rem;
+  top: 2.1875rem;
+  width: 65%;
+}
+
+.box-right p {
+  margin-left: 0.9375rem !important;
+  width: 90%;
+  text-indent: 2em;
+  text-align: justify;
+  font-size: 1.5625rem !important;
+  font-family: 'totoro';
+  color: black;
+  margin-top: 0.9375rem !important;
+}
+
+.small-box {
+  border: 0.0625rem solid rgb(210, 210, 210);
+  position: relative;
+  width: 90%;
+  height: 21.25rem;
+  margin: auto;
+  margin-top: 3.125rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0.625rem 0.625rem 1.25rem rgb(9 75 82 / 50%);
+}
+
+.small-box:hover {
+  scale: 1.01;
+}
+
+.big_div_003 {
+  display: none;
+}
+
+.big_div_003>.title {
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+}
+
+.big_div_003>.img img {
+  margin-top: -5px;
+  margin-bottom: 0.625rem;
+}
+
+.big_div_004 {
+  display: block;
+  width: 100%;
+  margin-top: 56.25rem !important;
+}
+
+.big_div_004>.title {
+  font-size: 3.4375rem;
+  margin-top: 0.9375rem;
+  margin-bottom: 1.5625rem;
+}
+
+.big_div_004>.you>span {
+  color: black;
+  font-size: 2.8125rem;
+  text-align: justify;
+}
+
+.big_div_004>.you>p {
+  margin: 1.25rem 3.125rem 1.25rem 0;
+  width: 90%;
+  text-indent: 2em !important;
+  text-align: justify;
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 1.875rem;
+  margin-top: 1.25rem;
+}
+
+.big_div_004>.kong {
+  height: 0.625rem;
+}
+
+.big_div_004>.img {
+  display: inline-block;
+  width: 42%;
+}
+
+.big_div_004>.img img {
+  width: 85%;
+  height: 39.5rem;
+  overflow: hidden;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+.big_div_004>.you {
+  float: right;
+  width: 50%;
+  margin-left: 1.875rem;
+  margin-bottom: 2.5rem;
+  margin-top: 1.875rem;
+}
+
+
+#base {
+  padding: 1.5625rem;
+  margin-top: 3.75rem;
+}
+
+#base p {
+  width: 90%;
+  text-indent: 2em;
+  text-align: start;
+  margin: auto;
+  margin-top: 1.25rem;
+  font-size: 1.875rem;
+  color: rgb(0 25 8 / 76%);
+  font-family: cursive;
+}
+
+#base span {
+  font-size: 2.8125rem;
+  font-family:'totoro' !important ;
+  src: url(../font/all.ttf);
+  margin-top: 1.25rem;
+}
+
+#base table {
+  width: 80%;
+  margin: auto;
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
+  border: spacing 0.3125rem 0.5rem;
+}
+
+#plot {
+  padding: 1.875rem;
+  margin-top: 3.75rem;
+  margin-bottom: 6.25rem;
+}
+
+#plot span {
+	font-size: 2.8125rem;
+	font-family:'totoro' !important;
+	src: url(../font/all.ttf);
+	
+}
+
+#plot p {
+  width: 100%;
+  text-indent: 2em;
+  text-align: justify;
+  margin: auto;
+  margin-top: 0.9375rem;
+  margin-bottom: 1.125rem;
+  font-size: 1.5625rem;
+  color: black;
+  font-family: cursive;
+}
+
+#plot div {
+  width: 90%;
+  margin: auto;
+  margin-top: 1.875rem;
+  margin-bottom: 2.5rem;
+}
+
+#plot div img {
+  width: 62.5rem;
+  border: 0.5px solid rgb(218, 222, 218);
+  margin-top: 0.9375rem;
+  margin-bottom: 0.75rem;
+}
+
+#plot h4 {
+	text-align: center;
+	font-size: 1.5625rem;
+	letter-spacing: 0.125rem;
+}
+
+#plot video {
+	margin: -20px 0;
+	width: 62.5rem;
+	border: 0.5px solid rgb(218, 222, 218);
+}
