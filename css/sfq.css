@@ -24,7 +24,7 @@
     transition: .5s;
 }
 .box>span{
-    font: 200 45px '优设标题黑';
+    font: 200 2.8125rem '优设标题黑';
     text-align: center;
     height: 40%;
     display: flex;
